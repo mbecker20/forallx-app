@@ -1,9 +1,9 @@
 import {createUseStyles} from 'react-jss'
-import { Colors } from '../../theme'
+import colors from '../../theme'
 
 const useJSS = createUseStyles({
   Bounder: {
-    backgroundColor: (colors: Colors) => colors.grey,
+    backgroundColor: colors.grey,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -18,7 +18,7 @@ const useJSS = createUseStyles({
   },
 
   Switch: {
-    backgroundColor: (colors: Colors) => colors.secondary,
+    backgroundColor: colors.secondary,
     position: 'relative',
     display: 'flex',
     alignItems: 'center',

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import useJSS from './style'
 import { useSpring, animated } from 'react-spring'
-import colors from '../../theme'
 
 
 interface Props {
@@ -13,7 +12,7 @@ interface Props {
 
 function Switch({ text, onSwitch, initState, style }: Props) {
   const [state, setState] = useState(initState)
-  const classes = useJSS(colors)
+  const classes = useJSS()
   function onClick() {
     onSwitch(!state)
     setState(!state)

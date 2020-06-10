@@ -1,10 +1,24 @@
 import { createUseStyles } from 'react-jss'
-import { Colors } from '../../theme'
+import colors from '../../theme'
 
 const useJSS = createUseStyles({
+  Bounder: {
+    backgroundColor: colors.grey,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    borderRadius: '0px',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    userSelect: 'none',
+    overflow: 'hidden',
+    width: '30vh',
+    height: '50vmin',
+    flexGrow: '3',
+    flexShrink: '3',
+    flexDirection: 'column',
+  },
+
   CVContainer: {
-    backgroundColor: (colors: Colors) => colors.grey,
-    //position: 'absolute',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
@@ -12,28 +26,41 @@ const useJSS = createUseStyles({
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
     overflowY: 'scroll',
-    width: '30vh',
+    overflowX: 'hidden',
+    width: '220px',
     height: '50vmin',
     flexGrow: '3',
     flexShrink: '3',
     flexDirection: 'column',
-    flexWrap: 'nowrap',
-    margin: '10px'
+    margin: '10px',
   },
 
   CVInnerContainer: {
-    //backgroundColor: (colors: Colors) => colors.secondary,
-    //position: 'absolute',
+    //backgroundColor: colors.secondary,
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
-    borderRadius: '15px',
+    borderRadius: '0px',
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
-    overflowY: 'scroll',
     width: '30vh',
     flexDirection: 'column',
-    flexWrap: 'nowrap',
+    marginLeft: '10px'
+  },
+
+  CVHeader: {
+    //backgroundColor: colors.secondary,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '0px',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    userSelect: 'none',
+    width: '30vh',
+    flexDirection: 'column',
+    fontSize: 'calc(20px + 2vmin)',
+    paddingTop: '5px',
+    paddingBottom: '5px',
   },
 
   Chapter: {
@@ -51,6 +78,7 @@ const useJSS = createUseStyles({
     //borderColor: 'white',
     //borderStyle: 'solid',
     padding: '5px',
+    fontSize: 'calc(10px + 2vmin)',
   },
 
   SubChapter: {

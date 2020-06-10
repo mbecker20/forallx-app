@@ -2,11 +2,10 @@ import React from 'react'
 import SideBar from './SideBar'
 import TopBar from './TopBar'
 import useJSS from './style'
-import colors from '../theme'
 import { Router } from '@reach/router'
 
 function App() {
-  const classes = useJSS(colors)
+  const classes = useJSS()
   return (
     <div>
       <TopBar text='forall x' />
