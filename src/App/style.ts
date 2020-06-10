@@ -1,16 +1,16 @@
 import { createUseStyles } from 'react-jss'
-import { Colors } from '../theme'
+import colors from '../theme'
 
 const useJSS = createUseStyles({
   TopBar: {
-    backgroundColor: (colors: Colors) => colors.grey,
+    backgroundColor: colors.grey,
     width: '100vw',
     height: '80px',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: 'calc(10px + 2vmin)',
+    fontSize: 'calc(20px + 2vmin)',
     color: 'white',
     position: 'absolute',
     top: '0px',
@@ -20,7 +20,7 @@ const useJSS = createUseStyles({
   },
 
   SideBar: {
-    backgroundColor: (colors: Colors) => colors.secondary,
+    backgroundColor: colors.secondary,
     height: 'calc(100vh - 100px)',
     display: 'flex',
     flexDirection: 'column',
@@ -41,7 +41,7 @@ const useJSS = createUseStyles({
   },
   
   Router: {
-    backgroundColor: (colors: Colors) => colors.tertiary,
+    backgroundColor: colors.tertiary,
     height: 'calc(100vh - 80px)',
     display: 'flex',
     alignItems: 'center',
