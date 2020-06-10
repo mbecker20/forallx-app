@@ -11,8 +11,8 @@ const useJSS = createUseStyles({
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
     overflow: 'hidden',
-    width: '30vh',
-    height: '50vmin',
+    width: '220px',
+    height: '90%',
     flexGrow: '3',
     flexShrink: '3',
     flexDirection: 'column',
@@ -43,7 +43,7 @@ const useJSS = createUseStyles({
     borderRadius: '0px',
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
-    width: '30vh',
+    width: '210px',
     flexDirection: 'column',
     marginLeft: '10px'
   },
@@ -56,7 +56,7 @@ const useJSS = createUseStyles({
     borderRadius: '0px',
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
-    width: '30vh',
+    width: '220px',
     flexDirection: 'column',
     fontSize: 'calc(20px + 2vmin)',
     paddingTop: '5px',
@@ -72,6 +72,8 @@ const useJSS = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    width: '210px'
+    //alignItems: 'center',
   },
 
   ChapterName: {
@@ -81,16 +83,40 @@ const useJSS = createUseStyles({
     fontSize: 'calc(10px + 2vmin)',
   },
 
+  SubChapterOuterBounder: {
+    padding: '0px',
+    margin: '0px',
+    display: 'flex',
+    flexDirection: 'row',
+    flexGrow: '1',
+    flexShrink: '0',
+    flexBasis: '0',
+    alignItems: 'center',
+    width: '90%',
+  },
+
+  SubChapterInnerBounder: {
+    padding: '0px',
+    margin: '0px',
+    display: 'flex',
+    flexDirection: 'column',
+    flexGrow: '1',
+    flexShrink: '0',
+    flexBasis: '0',
+    alignItems: 'flex-start',
+  },
+
   SubChapter: {
     //backgroundColor: (colors: Colors) => colors.primary,
     flexGrow: '1',
     flexShrink: '1',
     flexBasis: '0',
     display: 'flex',
-    alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
-    //height: '3vmin'
+    fontSize: 'calc(5px + 2vmin)',
+    position: 'relative',
+    left: '15px',
   },
 })
 

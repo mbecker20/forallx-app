@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { animated, useSpring } from 'react-spring'
 import useJSS from './style'
 import colors from '../../theme';
@@ -11,9 +11,10 @@ interface Props {
 function SubChapter({ isOpen, children }: Props) {
   const classes = useJSS(colors)
   const springStyle = useSpring({
-    height: isOpen ? '5vmin' : '0vmin',
+    height: isOpen ? '4vmin' : '0vmin',
+    transform: isOpen ? 'scaleY(1)' : 'scaleY(0)',
     opacity: isOpen ? 1 : 0,
-    padding: isOpen ? '5px' : '0px'
+    padding: isOpen ? '10px' : '0px'
   })
 
   return (
@@ -23,4 +24,4 @@ function SubChapter({ isOpen, children }: Props) {
   );
 }
 
-export default SubChapter;
+export default SubChapter
