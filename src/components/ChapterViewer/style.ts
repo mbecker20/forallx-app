@@ -29,7 +29,7 @@ const useJSS = createUseStyles({
     overflowY: 'scroll',
     overflowX: 'hidden',
     '&::-webkit-scrollbar': {
-      width: 8,
+      width: 5,
     },
     '&::-webkit-scrollbar-track': {
       //backgroundColor: colors.grey,
@@ -99,7 +99,6 @@ const useJSS = createUseStyles({
     '&:hover': {
       cursor: 'pointer',
     },
-    width: `calc(${sizes.chapterViewerWidth} - 20px)`, 
   },
 
   SubChapterBounder: {
