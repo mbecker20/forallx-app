@@ -1,93 +1,106 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Chapter from './Chapter'
 import SubChapter from './SubChapter'
 import useJSS from './style'
-import CVHeader from './CVHeader'
+import CVInnerContainer from './CVInnerContainer'
 
 function ChapterViewer() {
   const classes = useJSS()
+  /*
+  const [state, setState] = useState(false)
+  function reRender() { // I dont think this is the most elegant way to trigger re renders but works for now
+    setState(!state)
+  }
+  */
+  const [selectedSC, setSelectedSC] = useState('') // the highlighted sub chapter
+  const selectedState = {
+    selectedSC: selectedSC,
+    setSelectedSC: setSelectedSC
+  }
   return (
     <div className={classes.Bounder}>
-      <CVHeader />
+      <div className={classes.CVHeader}>
+        Chapters
+      </div>
       <div className={classes.CVContainer}>
-        <div className={classes.CVInnerContainer}>
+        <CVInnerContainer selectedState={selectedState}>
           <Chapter chapterName={'1. What is logic?'}>
-            <SubChapter>Introduction</SubChapter>
-            <SubChapter>1.1 Arguments</SubChapter>
-            <SubChapter>1.2 Sentences and propositions</SubChapter>
-            <SubChapter>1.3 Two ways that arguments can go wrong</SubChapter>
-            <SubChapter>1.4 Validity</SubChapter>
-            <SubChapter>1.5 Impossibility</SubChapter>
-            <SubChapter>1.6 Other logical notions</SubChapter>
-            <SubChapter>1.7 Formal languages</SubChapter>
-            <SubChapter>Practice Exercises</SubChapter>
+            <SubChapter id='1.0'>Introduction</SubChapter>
+            <SubChapter id='1.1'>1.1 Arguments</SubChapter>
+            <SubChapter id='1.2'>1.2 Sentences and propositions</SubChapter>
+            <SubChapter id='1.3'>1.3 Two ways that arguments can go wrong</SubChapter>
+            <SubChapter id='1.4'>1.4 Validity</SubChapter>
+            <SubChapter id='1.5'>1.5 Impossibility</SubChapter>
+            <SubChapter id='1.6'>1.6 Other logical notions</SubChapter>
+            <SubChapter id='1.7'>1.7 Formal languages</SubChapter>
+            <SubChapter id='1.8'>Practice Exercises</SubChapter>
           </Chapter>
           <Chapter chapterName={'2. Sentenial logic'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='2.0'>SubChapter A</SubChapter>
+            <SubChapter id='2.1'>SubChapter B</SubChapter>
+            <SubChapter id='2.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'3. Truth tables'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='3.0'>SubChapter A</SubChapter>
+            <SubChapter id='3.1'>SubChapter B</SubChapter>
+            <SubChapter id='3.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'4. Entailment and Models for SL'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='4.0'>SubChapter A</SubChapter>
+            <SubChapter id='4.1'>SubChapter B</SubChapter>
+            <SubChapter id='4.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'5. SL Trees'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='5.0'>SubChapter A</SubChapter>
+            <SubChapter id='5.1'>SubChapter B</SubChapter>
+            <SubChapter id='5.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'6. Soundness and Completeness for SL Trees'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='6.0'>SubChapter A</SubChapter>
+            <SubChapter id='6.1'>SubChapter B</SubChapter>
+            <SubChapter id='6.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'7. Natural Deduction Proofs in SL'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='7.1'>SubChapter A</SubChapter>
+            <SubChapter id='7.2'>SubChapter B</SubChapter>
+            <SubChapter id='7.3'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'8. Quantified logic'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='8.0'>SubChapter A</SubChapter>
+            <SubChapter id='8.1'>SubChapter B</SubChapter>
+            <SubChapter id='8.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'9. A formal semantics for QL'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='9.0'>SubChapter A</SubChapter>
+            <SubChapter id='9.1'>SubChapter B</SubChapter>
+            <SubChapter id='9.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'10. QL Trees'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='10.0'>SubChapter A</SubChapter>
+            <SubChapter id='10.1'>SubChapter B</SubChapter>
+            <SubChapter id='10.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'11. Soundness and Completeness for QL Trees'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='11.0'>SubChapter A</SubChapter>
+            <SubChapter id='11.1'>SubChapter B</SubChapter>
+            <SubChapter id='11.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'12. Identity'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='12.0'>SubChapter A</SubChapter>
+            <SubChapter id='12.1'>SubChapter B</SubChapter>
+            <SubChapter id='12.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'13. Natural Deduction Proofs in QL'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='13.0'>SubChapter A</SubChapter>
+            <SubChapter id='13.1'>SubChapter B</SubChapter>
+            <SubChapter id='13.2'>SubChapter C</SubChapter>
           </Chapter>
           <Chapter chapterName={'reference'}>
-            <SubChapter>SubChapter A</SubChapter>
-            <SubChapter>SubChapter B</SubChapter>
-            <SubChapter>SubChapter C</SubChapter>
+            <SubChapter id='14.0'>SubChapter A</SubChapter>
+            <SubChapter id='14.1'>SubChapter B</SubChapter>
+            <SubChapter id='14.2'>SubChapter C</SubChapter>
           </Chapter>
-        </div>
+        </CVInnerContainer>
       </div>
     </div>
   )

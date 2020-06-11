@@ -10,6 +10,7 @@ export const colors: Colors = {
   grey: grey,
   background: 'white',
   text: 'black',
+  selectedText: '#007ab3',
   secondary: secondary,
   tertiary: tertiary,
 }
