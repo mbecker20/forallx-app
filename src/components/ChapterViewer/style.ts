@@ -70,7 +70,7 @@ const useJSS = createUseStyles({
     bottom: '2px',
     //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
-    width: `calc(${sizes.chapterViewerWidth} - 10px)`,
+    width: `calc(${sizes.chapterViewerWidth} - 5px)`,
     flexDirection: 'column',
     fontSize: 'calc(20px + 2vmin)',
     paddingTop: '5px',
@@ -99,6 +99,7 @@ const useJSS = createUseStyles({
     '&:hover': {
       cursor: 'pointer',
     },
+    width: `calc(${sizes.chapterViewerWidth} - 20px)`, 
   },
 
   SubChapterBounder: {
