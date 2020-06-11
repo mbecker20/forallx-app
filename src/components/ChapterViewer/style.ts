@@ -35,6 +35,7 @@ const useJSS = createUseStyles({
       backgroundColor: 'rgba(0,0,0,0)',
       borderColor: 'inherit',
       borderStyle: 'inset',
+      borderWidth: '3px'
     },
     width: `calc(${sizes.chapterViewerWidth} - 20px)`,
     height: '50vmin',
