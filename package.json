@@ -1,4 +1,5 @@
 {
+  "homepage": "http://mbecker20.github.io/forallx-app",
   "name": "forallx-app",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +20,7 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "BROWSER='none' react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
