@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/forallx-app/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/forallx-app/static/js/main.b2ef122b.chunk.js",
+    "main.js.map": "/forallx-app/static/js/main.b2ef122b.chunk.js.map",
+    "runtime-main.js": "/forallx-app/static/js/runtime-main.9dac59e1.js",
+    "runtime-main.js.map": "/forallx-app/static/js/runtime-main.9dac59e1.js.map",
+    "static/js/2.6c5c0371.chunk.js": "/forallx-app/static/js/2.6c5c0371.chunk.js",
+    "static/js/2.6c5c0371.chunk.js.map": "/forallx-app/static/js/2.6c5c0371.chunk.js.map",
+    "index.html": "/forallx-app/index.html",
+    "precache-manifest.fc6c1edbc7c47845d2b7679e14de56c1.js": "/forallx-app/precache-manifest.fc6c1edbc7c47845d2b7679e14de56c1.js",
+    "service-worker.js": "/forallx-app/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/forallx-app/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.6c5c0371.chunk.js.LICENSE.txt": "/forallx-app/static/js/2.6c5c0371.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9dac59e1.js",
+    "static/js/2.6c5c0371.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.b2ef122b.chunk.js"
+  ]
+}
