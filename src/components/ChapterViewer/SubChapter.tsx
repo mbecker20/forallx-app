@@ -15,7 +15,12 @@ function SubChapter({ isOpen, children }: Props) {
     height: isOpen ? `${Math.floor(numChars/10)*4}vmin` : '0vmin',
     transform: isOpen ? 'scaleY(1)' : 'scaleY(0)',
     opacity: isOpen ? 1 : 0,
-    padding: isOpen ? '5px' : '0px'
+    padding: isOpen ? '5px' : '0px',
+    config: {
+      tension: 220,
+      clamp: true,
+      easing: t => t*t
+    },
   })
 
   return (
