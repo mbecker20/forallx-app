@@ -1,6 +1,6 @@
 import React, { useState, Children, cloneElement } from 'react'
 import useJSS from './style'
-import colors from '../../theme'
+import { colors } from '../../theme'
 
 interface Props {
   children: React.ReactNode

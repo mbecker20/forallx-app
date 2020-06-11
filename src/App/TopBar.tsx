@@ -1,13 +1,12 @@
 import React from 'react'
 import useJSS from './style'
-import colors from '../theme'
 
 interface Props {
   text: string
 }
 
 function TopBar({ text }: Props) {
-  const classes = useJSS(colors)
+  const classes = useJSS()
   return (
     <div className={classes.TopBar}>
       {text}

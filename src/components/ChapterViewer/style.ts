@@ -1,5 +1,5 @@
 import { createUseStyles } from 'react-jss'
-import colors from '../../theme'
+import { colors, sizes } from '../../theme'
 
 const useJSS = createUseStyles({
   Bounder: {
@@ -12,7 +12,7 @@ const useJSS = createUseStyles({
     //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
     overflow: 'hidden',
-    width: '220px',
+    width: sizes.chapterViewerWidth,
     height: '90%',
     flexGrow: '3',
     flexShrink: '3',
@@ -21,7 +21,7 @@ const useJSS = createUseStyles({
 
   CVContainer: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'flex-start',
     borderRadius: '0px',
     //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
@@ -38,12 +38,13 @@ const useJSS = createUseStyles({
       backgroundColor: colors.text,
       borderRadius: 5,
     },
-    width: '220px',
+    width: `calc(${sizes.chapterViewerWidth} - 20px)`,
     height: '50vmin',
     flexGrow: '3',
     flexShrink: '3',
     flexDirection: 'column',
-    margin: '10px',
+    //margin: '10px',
+    padding: '10px'
   },
 
   CVInnerContainer: {
@@ -54,7 +55,7 @@ const useJSS = createUseStyles({
     borderRadius: '0px',
     //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
-    width: '210px',
+    width: `calc(${sizes.chapterViewerWidth} - 20px)`,
     flexDirection: 'column',
     marginLeft: '10px'
   },
@@ -69,7 +70,7 @@ const useJSS = createUseStyles({
     bottom: '2px',
     //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
-    width: '220px',
+    width: `calc(${sizes.chapterViewerWidth} - 10px)`,
     flexDirection: 'column',
     fontSize: 'calc(20px + 2vmin)',
     paddingTop: '5px',
@@ -86,7 +87,7 @@ const useJSS = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    width: '210px'
+    width: `calc(${sizes.chapterViewerWidth} - 20px)`,
     //alignItems: 'center',
   },
 
@@ -109,6 +110,8 @@ const useJSS = createUseStyles({
     flexShrink: '0',
     flexBasis: '0',
     alignItems: 'flex-start',
+    position: 'relative',
+    left: '20px'
   },
 
   SubChapter: {
@@ -120,8 +123,6 @@ const useJSS = createUseStyles({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 'calc(5px + 2vmin)',
-    position: 'relative',
-    left: '15px',
     '&:hover': {
       cursor: 'pointer',
     },

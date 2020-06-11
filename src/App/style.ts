@@ -1,11 +1,11 @@
 import { createUseStyles } from 'react-jss'
-import colors from '../theme'
+import { colors, sizes } from '../theme'
 
 const useJSS = createUseStyles({
   TopBar: {
     backgroundColor: colors.grey,
     width: '100vw',
-    height: '80px',
+    height: sizes.topbarHeight,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -29,7 +29,7 @@ const useJSS = createUseStyles({
     flexWrap: 'nowrap',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    padding: '10px',
+    padding: '0px',
     fontSize: 'calc(10px + 2vmin)',
     color: 'white',
     textOrientation: 'upright',
@@ -39,19 +39,19 @@ const useJSS = createUseStyles({
     userSelect: 'none',
     zIndex: '99',
     boxSizing: 'borderBox',
-    width: '230px'
+    width: sizes.sidebarWidth,
   },
   
   Router: {
     backgroundColor: colors.tertiary,
-    height: 'calc(100vh - 80px)',
+    height: `calc(100vh - ${sizes.topbarHeight})`,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 'calc(10px + 2vmin)',
     color: 'white',
     position: 'absolute',
-    top: '80px',
+    top: sizes.topbarHeight,
     overflow: 'hidden',
   },
 })

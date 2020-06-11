@@ -1,9 +1,9 @@
 import {createUseStyles} from 'react-jss'
-import { Colors } from '../../theme'
+import { colors } from '../../theme'
 
 const useStyles = createUseStyles({
   Button: {
-    backgroundColor: (colors: Colors) => colors.secondary,
+    backgroundColor: colors.secondary,
     position: 'relative',
     display: 'flex',
     alignItems: 'center',

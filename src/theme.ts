@@ -3,14 +3,10 @@ const secondary = '#281c34' //purple
 const tertiary = '#182c54' // blue
 
 export interface Colors {
-  grey: string,
-  background: string,
-  text: string,
-  secondary: string,
-  tertiary: string,
+  [index: string]: string
 }
 
-const colors: Colors = {
+export const colors: Colors = {
   grey: grey,
   background: 'white',
   text: 'black',
@@ -18,6 +14,13 @@ const colors: Colors = {
   tertiary: tertiary,
 }
 
-export default colors
+export interface Sizes {
+  [index: string]: string
+}
 
+export const sizes: Sizes = {
+  topbarHeight: '80px',
+  sidebarWidth: '280px',
+  chapterViewerWidth: '270px',
+}
 
