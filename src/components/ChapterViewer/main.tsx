@@ -11,62 +11,62 @@ function ChapterViewer() {
       <CVHeader />
       <div className={classes.CVContainer}>
         <div className={classes.CVInnerContainer}>
-          <Chapter chapterName={'Chapter 1'}>
+          <Chapter chapterName={'1. asdfasd'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 2'}>
+          <Chapter chapterName={'2. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 3'}>
+          <Chapter chapterName={'3. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 4'}>
+          <Chapter chapterName={'4. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 5'}>
+          <Chapter chapterName={'5. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 6'}>
+          <Chapter chapterName={'6. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 7'}>
+          <Chapter chapterName={'7. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 8'}>
+          <Chapter chapterName={'8. asdfsdd'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 9'}>
+          <Chapter chapterName={'9. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 10'}>
+          <Chapter chapterName={'10. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 11'}>
+          <Chapter chapterName={'11. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
           </Chapter>
-          <Chapter chapterName={'Chapter 12'}>
+          <Chapter chapterName={'12. asdfsdf'}>
             <SubChapter>SubChapter A</SubChapter>
             <SubChapter>SubChapter B</SubChapter>
             <SubChapter>SubChapter C</SubChapter>
