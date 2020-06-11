@@ -23,7 +23,8 @@ const useJSS = createUseStyles({
     backgroundColor: colors.background,
     borderStyle: 'none solid',
     borderColor: 'black',
-    height: 'calc(100vh - 100px)',
+    height: `calc(100vh - ${sizes.topbarHeight})`,
+    width: sizes.sidebarWidth,
     display: 'flex',
     flexDirection: 'column',
     flexWrap: 'nowrap',
@@ -39,7 +40,6 @@ const useJSS = createUseStyles({
     userSelect: 'none',
     zIndex: '99',
     boxSizing: 'borderBox',
-    width: sizes.sidebarWidth,
   },
   
   Router: {
