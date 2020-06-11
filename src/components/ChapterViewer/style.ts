@@ -50,7 +50,7 @@ const useJSS = createUseStyles({
   CVInnerContainer: {
     //backgroundColor: colors.secondary,
     display: 'flex',
-    alignItems: 'flex-start',
+    alignItems: 'flex-end',
     justifyContent: 'flex-start',
     borderRadius: '0px',
     //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
