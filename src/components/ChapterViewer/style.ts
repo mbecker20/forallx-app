@@ -28,6 +28,16 @@ const useJSS = createUseStyles({
     userSelect: 'none',
     overflowY: 'scroll',
     overflowX: 'hidden',
+    '&::-webkit-scrollbar': {
+      width: 8,
+    },
+    '&::-webkit-scrollbar-track': {
+      //backgroundColor: colors.grey,
+    },
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: colors.text,
+      borderRadius: 5,
+    },
     width: '220px',
     height: '50vmin',
     flexGrow: '3',
@@ -64,7 +74,7 @@ const useJSS = createUseStyles({
     fontSize: 'calc(20px + 2vmin)',
     paddingTop: '5px',
     paddingBottom: '5px',
-    borderStyle: 'none none solid none'
+    borderStyle: 'none none solid none',
   },
 
   Chapter: {
@@ -85,6 +95,9 @@ const useJSS = createUseStyles({
     //borderStyle: 'solid',
     padding: '5px',
     fontSize: 'calc(10px + 2vmin)',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   },
 
   SubChapterBounder: {
@@ -109,6 +122,9 @@ const useJSS = createUseStyles({
     fontSize: 'calc(5px + 2vmin)',
     position: 'relative',
     left: '15px',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   },
 })
 
