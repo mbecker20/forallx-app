@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc52f37dc4674788cd1fea7b0d5fe03f",
+    "revision": "a04d0d4c125d033e0ebdca23e459fda2",
     "url": "/forallx-app/index.html"
   },
   {
-    "revision": "e3a15973a4632a0b36e3",
+    "revision": "976546bf68ff2fd428f8",
     "url": "/forallx-app/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/forallx-app/static/js/2.6c5c0371.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e3a15973a4632a0b36e3",
-    "url": "/forallx-app/static/js/main.b2ef122b.chunk.js"
+    "revision": "976546bf68ff2fd428f8",
+    "url": "/forallx-app/static/js/main.9e4e95ed.chunk.js"
   },
   {
     "revision": "f7b4111fbfccd12f75fb",
