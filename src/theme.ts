@@ -2,7 +2,7 @@ const grey = '#282c34' // grey
 const secondary = '#281c34' //purple
 const tertiary = '#182c54' // blue
 
-export interface Colors {
+interface Colors {
   [index: string]: string
 }
 
@@ -15,7 +15,7 @@ export const colors: Colors = {
   tertiary: tertiary,
 }
 
-export interface Sizes {
+interface Sizes {
   [index: string]: string
 }
 
