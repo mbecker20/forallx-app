@@ -20,7 +20,9 @@ const useJSS = createUseStyles({
   },
 
   SideBar: {
-    backgroundColor: colors.secondary,
+    backgroundColor: colors.background,
+    borderStyle: 'none solid',
+    borderColor: 'black',
     height: 'calc(100vh - 100px)',
     display: 'flex',
     flexDirection: 'column',

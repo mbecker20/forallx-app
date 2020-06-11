@@ -4,12 +4,16 @@ const tertiary = '#182c54' // blue
 
 export interface Colors {
   grey: string,
+  background: string,
+  text: string,
   secondary: string,
   tertiary: string,
 }
 
 const colors: Colors = {
   grey: grey,
+  background: 'white',
+  text: 'black',
   secondary: secondary,
   tertiary: tertiary,
 }

@@ -3,12 +3,13 @@ import colors from '../../theme'
 
 const useJSS = createUseStyles({
   Bounder: {
-    backgroundColor: colors.grey,
+    backgroundColor: colors.background,
+    color: colors.text,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
     borderRadius: '0px',
-    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
     overflow: 'hidden',
     width: '220px',
@@ -23,7 +24,7 @@ const useJSS = createUseStyles({
     alignItems: 'center',
     justifyContent: 'flex-start',
     borderRadius: '0px',
-    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
     overflowY: 'scroll',
     overflowX: 'hidden',
@@ -41,7 +42,7 @@ const useJSS = createUseStyles({
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     borderRadius: '0px',
-    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
     width: '210px',
     flexDirection: 'column',
@@ -54,13 +55,16 @@ const useJSS = createUseStyles({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: '0px',
-    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    position: 'relative',
+    bottom: '2px',
+    //boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     userSelect: 'none',
     width: '220px',
     flexDirection: 'column',
     fontSize: 'calc(20px + 2vmin)',
     paddingTop: '5px',
     paddingBottom: '5px',
+    borderStyle: 'none none solid none'
   },
 
   Chapter: {
@@ -83,19 +87,7 @@ const useJSS = createUseStyles({
     fontSize: 'calc(10px + 2vmin)',
   },
 
-  SubChapterOuterBounder: {
-    padding: '0px',
-    margin: '0px',
-    display: 'flex',
-    flexDirection: 'row',
-    flexGrow: '1',
-    flexShrink: '0',
-    flexBasis: '0',
-    alignItems: 'center',
-    width: '90%',
-  },
-
-  SubChapterInnerBounder: {
+  SubChapterBounder: {
     padding: '0px',
     margin: '0px',
     display: 'flex',
