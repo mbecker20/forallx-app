@@ -35,8 +35,8 @@ const useJSS = createUseStyles({
       //backgroundColor: colors.grey,
     },
     '&::-webkit-scrollbar-thumb': {
-      backgroundColor: colors.text,
-      borderRadius: 5,
+      backgroundColor: 'rgba(0,0,0,0)',
+      //borderRadius: 5,
     },
     width: `calc(${sizes.chapterViewerWidth} - 20px)`,
     height: '50vmin',
