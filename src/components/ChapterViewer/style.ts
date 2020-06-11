@@ -31,12 +31,10 @@ const useJSS = createUseStyles({
     '&::-webkit-scrollbar': {
       width: 5,
     },
-    '&::-webkit-scrollbar-track': {
-      //backgroundColor: colors.grey,
-    },
     '&::-webkit-scrollbar-thumb': {
       backgroundColor: 'rgba(0,0,0,0)',
-      //borderRadius: 5,
+      borderColor: 'inherit',
+      borderStyle: 'inset',
     },
     width: `calc(${sizes.chapterViewerWidth} - 20px)`,
     height: '50vmin',
@@ -44,7 +42,8 @@ const useJSS = createUseStyles({
     flexShrink: '3',
     flexDirection: 'column',
     //margin: '10px',
-    padding: '10px'
+    padding: '10px',
+    borderStyle: 'none',
   },
 
   CVInnerContainer: {

@@ -3,6 +3,9 @@ import Chapter from './Chapter'
 import SubChapter from './SubChapter'
 import useJSS from './style'
 import CVInnerContainer from './CVInnerContainer'
+import { useSpring, animated } from 'react-spring'
+
+let timeoutID = 0
 
 function ChapterViewer() {
   const classes = useJSS()
@@ -17,12 +20,21 @@ function ChapterViewer() {
     selectedSC: selectedSC,
     setSelectedSC: setSelectedSC
   }
+  const [scrollbarVisible, setSBVisible] = useState(false)
+  function onScroll() {
+    setSBVisible(true)
+    window.clearTimeout(timeoutID)
+    timeoutID = window.setTimeout(() => {setSBVisible(false)}, 500)
+  }
+  const scrollbarSpring = useSpring({
+    borderColor: scrollbarVisible ? 'rgba(0,0,0,1)' : 'rgba(0,0,0,0)',
+  })
   return (
     <div className={classes.Bounder}>
       <div className={classes.CVHeader}>
         Chapters
       </div>
-      <div className={classes.CVContainer}>
+      <animated.div className={classes.CVContainer} onScroll={onScroll} style={scrollbarSpring}>
         <CVInnerContainer selectedState={selectedState}>
           <Chapter chapterName={'1. What is logic?'}>
             <SubChapter id='1.0'>Introduction</SubChapter>
@@ -101,7 +113,7 @@ function ChapterViewer() {
             <SubChapter id='14.2'>SubChapter C</SubChapter>
           </Chapter>
         </CVInnerContainer>
-      </div>
+      </animated.div>
     </div>
   )
 }
