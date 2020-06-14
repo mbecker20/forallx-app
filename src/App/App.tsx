@@ -12,7 +12,7 @@ function App() {
       <TopBar text='forall x' />
       <SideBar />
       <Router className={classes.Router}>
-        <Chapter1 path='/'/>
+        <Chapter1 path='/forallx-app'/>
       </Router>
     </div>
   )
