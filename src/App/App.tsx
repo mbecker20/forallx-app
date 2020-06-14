@@ -3,6 +3,7 @@ import SideBar from './SideBar'
 import TopBar from './TopBar'
 import useJSS from './style'
 import { Router } from '@reach/router'
+import Chapter1 from '../components/Content/Chapter1'
 
 function App() {
   const classes = useJSS()
@@ -11,9 +12,7 @@ function App() {
       <TopBar text='forall x' />
       <SideBar />
       <Router className={classes.Router}>
-        {
-          // textbook sections
-        }
+        <Chapter1 path='/'/>
       </Router>
     </div>
   )

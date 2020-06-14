@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import useStyles from './style'
+import useJSS from './style'
 import { animated, useSpring } from 'react-spring'
 
 const upShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
@@ -15,7 +15,7 @@ interface Props {
 }
 
 function Button({ style, onClick, children }: Props) {
-  const classes = useStyles()
+  const classes = useJSS()
   const [pressed, setPressed] = useState(false)
   const buttonSpring = useSpring({
     boxShadow: pressed ? downShadow : upShadow,

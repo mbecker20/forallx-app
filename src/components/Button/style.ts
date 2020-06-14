@@ -1,7 +1,7 @@
 import {createUseStyles} from 'react-jss'
 import { colors } from '../../theme'
 
-const useStyles = createUseStyles({
+const useJSS = createUseStyles({
   Button: {
     backgroundColor: colors.secondary,
     position: 'relative',
@@ -18,4 +18,4 @@ const useStyles = createUseStyles({
   },
 })
 
-export default useStyles;
+export default useJSS

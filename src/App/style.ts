@@ -21,7 +21,7 @@ const useJSS = createUseStyles({
 
   SideBar: {
     backgroundColor: colors.background,
-    borderStyle: 'none solid',
+    borderStyle: 'none inset none none',
     borderColor: 'black',
     height: `calc(100vh - ${sizes.topbarHeight})`,
     width: sizes.sidebarWidth,
@@ -43,16 +43,20 @@ const useJSS = createUseStyles({
   },
   
   Router: {
-    backgroundColor: colors.tertiary,
+    backgroundColor: colors.background,
     height: `calc(100vh - ${sizes.topbarHeight})`,
+    width: `calc(100vw - ${sizes.sidebarWidth})`,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'column',
     fontSize: 'calc(10px + 2vmin)',
-    color: 'white',
+    color: colors.text,
     position: 'absolute',
     top: sizes.topbarHeight,
-    overflow: 'hidden',
+    left: sizes.sidebarWidth,
+    overflowX: 'hidden',
+    overflowY: 'scroll',
   },
 })
 
