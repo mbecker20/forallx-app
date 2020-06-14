@@ -32,7 +32,7 @@ function ChapterViewer() {
   return (
     <div className={classes.Bounder}>
       <div className={classes.CVHeader}>
-        Chapters
+        <strong>Chapters</strong>
       </div>
       <animated.div className={classes.CVContainer} onScroll={onScroll} style={scrollbarSpring}>
         <CVInnerContainer selectedState={selectedState}>
