@@ -8,7 +8,7 @@ interface Colors {
 
 export const colors: Colors = {
   grey: grey,
-  background: 'white',
+  background: '#fffff8',
   text: 'black',
   selectedText: '#007ab3',
   secondary: secondary,
