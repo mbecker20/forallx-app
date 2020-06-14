@@ -17,6 +17,8 @@ const useJSS = createUseStyles({
     flexGrow: '3',
     flexShrink: '3',
     flexDirection: 'column',
+    //position: 'relative',
+    //top: '3vmin'
   },
 
   CVContainer: {
@@ -73,8 +75,8 @@ const useJSS = createUseStyles({
     width: `calc(${sizes.chapterViewerWidth} - 5px)`,
     flexDirection: 'column',
     fontSize: 'calc(20px + 2vmin)',
-    paddingTop: '5px',
-    paddingBottom: '5px',
+    paddingTop: '3vmin',
+    paddingBottom: '15px',
     borderStyle: 'none none solid none',
   },
 
