@@ -18,7 +18,7 @@ function ChapterViewer() {
   function onScroll() {
     setSBVisible(true)
     window.clearTimeout(timeoutID)
-    timeoutID = window.setTimeout(() => {setSBVisible(false)}, 500)
+    timeoutID = window.setTimeout(() => {setSBVisible(false)}, 1000)
   }
   const scrollbarSpring = useSpring({
     borderColor: scrollbarVisible ? 'rgba(0,0,0,1)' : 'rgba(0,0,0,0)',
