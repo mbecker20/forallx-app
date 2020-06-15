@@ -7,10 +7,10 @@ interface Props {
   children: React.ReactNode
   chapterName: string
   selectedState?: any
-  chapterID?: string
+  chapterPath?: string
 }
 
-function Chapter({ chapterName, chapterID, children, selectedState }: Props) {
+function Chapter({ chapterName, chapterPath, children, selectedState }: Props) {
   const classes = useJSS()
   const [open, setOpen] = useState(false)
 
@@ -34,7 +34,7 @@ function Chapter({ chapterName, chapterID, children, selectedState }: Props) {
       isOpen: open, 
       key: index, 
       selectedState: selectedState,
-      chapter: chapterID
+      chapter: chapterPath
     })
   })
 

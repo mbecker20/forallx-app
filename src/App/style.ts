@@ -57,6 +57,17 @@ const useJSS = createUseStyles({
     left: sizes.sidebarWidth,
     overflowX: 'hidden',
     overflowY: 'scroll',
+    '&::-webkit-scrollbar': {
+      width: 10,
+    },
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: 'rgba(0,0,0,0)',
+      borderColor: 'inherit',
+      borderStyle: 'inset',
+      borderWidth: '10px',
+      position: 'absolute',
+      right: '100px'
+    },
   },
 })
 

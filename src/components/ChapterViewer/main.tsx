@@ -14,7 +14,7 @@ function ChapterViewer() {
     selectedSC: selectedSC,
     setSelectedSC: setSelectedSC
   }
-  const [scrollbarVisible, setSBVisible] = useState(false)
+  const [scrollbarVisible, setSBVisible] = useState(false) // auto hide scroll bar
   function onScroll() {
     setSBVisible(true)
     window.clearTimeout(timeoutID)
@@ -30,7 +30,7 @@ function ChapterViewer() {
       </div>
       <animated.div className={classes.CVContainer} onScroll={onScroll} style={scrollbarSpring}>
         <CVInnerContainer selectedState={selectedState}>
-          <Chapter chapterName='1. What is logic?' chapterID='chapter1'>
+          <Chapter chapterName='1. What is logic?' chapterPath='chapter1'>
             <SubChapter section='#what-is-logic' id='1.0'>Introduction</SubChapter>
             <SubChapter section='#arguments' id='1.1'>1.1 Arguments</SubChapter>
             <SubChapter section='#sentences-and-propositions' id='1.2'>1.2 Sentences and propositions</SubChapter>
@@ -41,10 +41,8 @@ function ChapterViewer() {
             <SubChapter section='#formal-languages' id='1.7'>1.7 Formal languages</SubChapter>
             <SubChapter section='#practice-exercises' id='1.8'>Practice Exercises</SubChapter>
           </Chapter>
-          <Chapter chapterName={'2. Sentenial logic'}>
-            <SubChapter id='2.0'>SubChapter A</SubChapter>
-            <SubChapter id='2.1'>SubChapter B</SubChapter>
-            <SubChapter id='2.2'>SubChapter C</SubChapter>
+          <Chapter chapterName={'2. Sentenial logic'} chapterPath='chapter2'>
+            <SubChapter id='2.0'>Chapter 2 test</SubChapter>
           </Chapter>
           <Chapter chapterName={'3. Truth tables'}>
             <SubChapter id='3.0'>SubChapter A</SubChapter>
