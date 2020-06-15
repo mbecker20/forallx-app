@@ -11,7 +11,7 @@ const useJSS = createUseStyles({
     textAlign: 'justify',
     textJustify: 'inter-word',
     flexDirection: 'column',
-    fontSize: 'calc(12px + 1vmin)',
+    fontSize: 'calc(15px + 1vmin)',
     color: colors.text,
     overflowX: 'hidden',
     position: 'absolute',
