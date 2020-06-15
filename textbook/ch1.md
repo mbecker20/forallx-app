@@ -10,18 +10,18 @@ in the logical sense aren't events that happen between people; a logical
 argument is structured to give someone a reason to believe some
 conclusion. Here are two examples of such arguments:
 
-<ol>
-<li>It is raining heavily.</li>
-<li>When it rains, everyone outside without an umbrella gets wet.</li>
-<li>[therefore] You should take an umbrella.</li>
-</ol>
+<blockquote>
+**1.** It is raining heavily.<br/>
+**2.** When it rains, everyone outside without an umbrella gets wet.<br/>
+[therefore] You should take an umbrella.
+</blockquote>
 
-<ol>
-<li>It is either raining or snowing.</li>
-<li>If it is colder than -10 degrees, it is not raining.</li>
-<li>It is -18 degrees.</li>
-<li>[therefore] It is snowing.</li>
-</ol>
+<blockquote>
+**1.** It is either raining or snowing.<br/>
+**2.** If it is colder than -10 degrees, it is not raining.<br/>
+**3.** It is -18 degrees.<br/>
+[therefore] It is snowing.
+</blockquote>
 
 The three dots on the last line of each argument mean 'Therefore' and
 they indicate that the final sentence is the *conclusion* of the
@@ -57,14 +57,16 @@ their premises and end with their conclusions, but not always. For some
 purposes in this course, we will be working with *idealizations* of
 natural language, where we work as if some generally applicable rules of
 thumb held without exception. Let's define (a slightly technical notion
-of) an **Argument** as a series of sentences. The sentences at the beginning of the
+of) an **argument** as a series of sentences. The sentences at the beginning of the
 series are premises. The final sentence in the series is the conclusion.
 
 Here is an example of an argument:
 
-> People get wet whenever it rains.<br/>
-> It often rains in Vancouver.<br/>
-> [therefore] People often get wet in Vancouver.
+<blockquote>
+**1.** People get wet whenever it rains.<br/>
+**2.** It often rains in Vancouver.<br/>
+[therefore] People often get wet in Vancouver.
+</blockquote>
 
 The idea of an argument is that the premises are supposed to give you
 reason to accept the conclusion. If I'm trying to convince you that
@@ -75,9 +77,11 @@ you there.
 Notice that our definition of an argument is quite general. Consider
 this example:
 
-> Vancouver has more churches than any other Canadian city.<br/>
-> Two oboes are fighting a duel under the fireworks.<br/>
-> [therefore] J. Edgar Hoover was an honest man.
+<blockquote>
+**1.** Vancouver has more churches than any other Canadian city.<br/>
+**2.** Two oboes are fighting a duel under the fireworks.<br/>
+[therefore] J. Edgar Hoover was an honest man.
+</blockquote>
 
 It may seem odd to call this an argument, but that is because it would
 be a terrible argument. The two premises have nothing at all to do with
@@ -100,7 +104,7 @@ Such sentences are sometimes described as expressing *propositions*.
 We will not be theorizing in terms of questions and other
 non-propositional sentences in formal logic. Since we are only
 interested in sentences that can figure as a premise or conclusion of an
-argument, we'll define a technical notion of a **Sentence** as a sentence expressing
+argument, we'll define a technical notion of a **sentence** as a sentence expressing
 a proposition, i.e., a sentence that can be true or false.
 
 Don't confuse the idea of a sentence that can be true or false with the
@@ -173,9 +177,11 @@ We will call truth or falsity the **truth-value** of a sentence.
 
 Consider the argument that you should take an umbrella
 
-1. It is raining heavily.
-2. When it rains, everyone outside without an umbrella gets wet.
-3. [therefore] You should take an umbrella.
+<blockquote>
+**1.** It is raining heavily. <br/>
+**2.** When it rains, everyone outside without an umbrella gets wet. <br/>
+[therefore] You should take an umbrella.
+</blockquote>
 
 If premise (1) is false --- if it is sunny outside --- then the argument
 fails. It does not establish that you should take an umbrella. Or
@@ -202,17 +208,18 @@ So it seems that there are two ways an argument could be weak. First,
 one or more of the premises might be false. An argument gives you a
 reason to believe its conclusion only if you believe its premises.
 Second, the premises might fail to support the conclusion, or fail to
-support it sufficiently str
-<br/>ongly. Even if the premises were true, the
+support it sufficiently strongly. Even if the premises were true, the
 form of the argument might be weak. The example we just considered is
 weak in both ways.
 
 Once again, we are working with a particular kind of idealization
 regarding arguments and what makes them good. Consider another example:
 
-    You are reading this book.
-    This is a logic book.
-    [therefore] You are a logic student.
+<blockquote>
+**1.** You are reading this book. <br/>
+**2.** This is a logic book. <br/>
+[therefore] You are a logic student.
+</blockquote>
 
 In a straightforward and ordinary sense, this is not a terrible
 argument. The premises are true. And they do offer some support for the
@@ -260,9 +267,11 @@ are inconsistent with the falsity of its conclusion.)
 Notice that validity does *not* require that the premises be true.
 Consider this example:
 
-    1. Oranges are either fruits or musical instruments.
-    2. Oranges are not fruits.
-    [therefore] Oranges are musical instruments.
+<blockquote>
+**1.** Oranges are either fruits or musical instruments. <br/>
+**2.** Oranges are not fruits. <br/>
+[therefore] Oranges are musical instruments.
+</blockquote>
 
 This is a valid argument. It is impossible for the premises to be true
 if the conclusion is false. Since it has a false premise --- premise (2)
@@ -276,9 +285,11 @@ in arguments. An argument is **sound** if and only if it is valid and all of its
 premises are true. For example, this variant argument on the above
 argument is sound:
 
-    1. Oranges are either fruits or musical instruments.
-    2. Oranges are not musical instruments.
-    [therefore] Oranges are fruits.
+<blockquote>
+**1.** Oranges are either fruits or musical instruments. <br/>
+**2.** Oranges are not musical instruments. <br/>
+[therefore] Oranges are fruits.
+</blockquote>
 
 For reasons that will emerge, logic tends to focus primarily on
 validity, rather than soundness.
@@ -288,9 +299,11 @@ a true conclusion. Conversely, having true premises and a true
 conclusion is also not enough to make an argument valid. Consider this
 example:
 
-    Donald Trump is a U.S. citizen.
-    Justin Trudeau is a Canadian citizen.
-    [therefore] UBC is the largest employer in Vancouver.
+<blockquote>
+**1.** Donald Trump is a U.S. citizen. <br/>
+**2.** Justin Trudeau is a Canadian citizen. <br/>
+[therefore] UBC is the largest employer in Vancouver.
+</blockquote>
 
 The premises and conclusion of this argument are, as a matter of fact,
 all true. Nevertheless, this is quite a poor argument. This is related
@@ -312,28 +325,29 @@ the falsity of the conclusion.
 
 Here are some more valid arguments. Can you see why each is valid?
 
-1. Socrates is a man.
-2. All men are carrots.
-3. [therefore ]Socrates is a carrot.
+<blockquote>
+**1.** Socrates is a man. <br/>
+**2.** All men are carrots. <br/>
+[therefore] Socrates is a carrot.
+</blockquote>
 
+<blockquote>
+**1.** Abe Lincoln was either born in Illinois or he was once president. <br/>
+**2.** Abe Lincoln was never president. <br/>
+[therefore] Abe Lincoln was born in Illinois.
+</blockquote>
 
-<br/>
+<blockquote>
+**1.** Justin Trudeau is either from France or from Luxemborg. <br/>
+**2.** Justin Trudeau is not from Luxemborg. <br/>
+[therefore] Justin Trudeau is from France.
+</blockquote>
 
-1. Abe Lincoln was either born in Illinois or he was once president.
-2. Abe Lincoln was never president.
-3. [therefore] Abe Lincoln was born in Illinois.
-
-<br/>
-
-1. Justin Trudeau is either from France or from Luxemborg.
-2. Justin Trudeau is not from Luxemborg.
-3. [therefore] Justin Trudeau is from France.
-
-<br/>
-
-1. If the world were to end today, then I would not need to get up tomorrow morning.
-2. I will need to get up tomorrow morning.
-3. [therefore] The world will not end today.
+<blockquote>
+**1.** If the world were to end today, then I would not need to get up tomorrow morning. <br/>
+**2.** I will need to get up tomorrow morning. <br/>
+[therefore] The world will not end today.
+</blockquote>
 
 **1.5 Impossibility**
 ---------------------
@@ -377,9 +391,11 @@ true, just as a matter of logic.
 
 Compare these sentences:
 
-    1. It is raining.
-    2. Either it is hot outside, or it is not hot outside.
-    3. There is an earthquake happening here right now and there are never earthquakes here.
+<blockquote>
+**1.** It is raining. <br/>
+**2.** Either it is hot outside, or it is not hot outside. <br/>
+**3.** There is an earthquake happening here right now and there are never earthquakes here.
+</blockquote>
 
 Sentence 1 could be true or it could be false. (As I'm
 typing these words on a sunny Vancouver summer day, it is false.)
@@ -403,8 +419,10 @@ contradiction.
 We can also ask about the logical relations *between* two sentences. For
 example:
 
-    Sunil went to the store after he washed the dishes.
-    Sunil washed the dishes before he went to the store.
+<blockquote>
+Sunil went to the store after he washed the dishes. <br/>
+Sunil washed the dishes before he went to the store.
+</blockquote>
 
 These two sentences are both contingent. (Do you see why?) Yet they must
 have the same truth-value. If either of the sentences is true, then they
@@ -414,13 +432,15 @@ are **logically equivalent**.
 
 Notice that both of these arguments are valid:
 
-    Sunil went to the store after he washed the dishes.
-    [therefore] Sunil washed the dishes before he went to the store.
+<blockquote>
+Sunil went to the store after he washed the dishes. <br/>
+[therefore] Sunil washed the dishes before he went to the store.
+</blockquote>
 
-<br/>
-
-    Sunil washed the dishes before he went to the store.
-    [therefore] Sunil went to the store after he washed the dishes.
+<blockquote>
+Sunil washed the dishes before he went to the store. <br/>
+[therefore] Sunil went to the store after he washed the dishes.
+</blockquote>
 
 In general, if two sentences are equivalent, then an argument with
 either one as a premise, and the other as the conclusion, will be valid.
@@ -429,33 +449,33 @@ either one as a premise, and the other as the conclusion, will be valid.
 
 Consider these two sentences:
 
-> **B1** My only brother is taller than I am.
-
-> **B2** My only brother is shorter than I am.
+<blockquote>
+**B1** My only brother is taller than I am. <br/>
+**B2** My only brother is shorter than I am.
+</blockquote>
 
 Logic alone cannot tell us which, if either, of these sentences is true.
-Yet we can say that *if* the first sentence (B1) is true, *then* the
-second sentence (B2) must be false. And if B2 is true, then B1 must be
+Yet we can say that *if* the first sentence (**B1**) is true, *then* the
+second sentence (**B2**) must be false. And if **B2** is true, then **B1** must be
 false. It cannot be the case that both of these sentences are true.
 
 If a set of sentences could not all be true at the same time, like
-B1--B2, they are said to be **inconsistent**. Otherwise, they are **consistent**.
+**B1**--**B2**, they are said to be **inconsistent**. Otherwise, they are **consistent**.
 
 We can ask about the consistency of any number of sentences. For example, consider the following list of sentences:
 
-> **G1** There are at least four giraffes at the wild animal park.
+<blockquote>
+**G1** There are at least four giraffes at the wild animal park. <br/>
+**G2** There are exactly seven gorillas at the wild animal park. <br/>
+**G3** There are not more than two Martians at the wild animal park. <br/>
+**G4** Every giraffe at the wild animal park is a Martian.
+</blockquote>
 
-> **G2** There are exactly seven gorillas at the wild animal park.
-
-> **G3** There are not more than two Martians at the wild animal park.
-
-> **G4** Every giraffe at the wild animal park is a Martian.
-
-G1 and G4 together imply that there are at least four Martian giraffes
-at the park. This conflicts with G3, which implies that there are no
-more than two Martian giraffes there. So the set of sentences G1--G4 is
+**G1** and **G4** together imply that there are at least four Martian giraffes
+at the park. This conflicts with **G3**, which implies that there are no
+more than two Martian giraffes there. So the set of sentences **G1**--**G4** is
 inconsistent. (Notice that in this example the inconsistency has nothing
-at all to do with G2. G2 just happens to be part of an inconsistent
+at all to do with **G2**. **G2** just happens to be part of an inconsistent
 set.)
 
 **1.7 Formal languages**
@@ -466,17 +486,21 @@ there are some general argumentative structures that transcend English
 or any other particular natural language. Consider, for example, the
 following simple argument:
 
-    Vancouver is in Canada.
-    Moscow is in Russia.
-    [therefore] Vancouver is in Canada and Moscow is in Russia.
+<blockquote>
+**1.** Vancouver is in Canada. <br/>
+**2.** Moscow is in Russia. <br/>
+[therefore] Vancouver is in Canada and Moscow is in Russia.
+</blockquote>
 
 Hopefully by now it is obvious to you that this argument is valid. (Not
 just that --- it is even sound.) That argument has something important
 in common with this one:
 
-    Vancouver is on Mars.
-    Moscow is on Venus.
-    [therefore] Vancouver is on Mars and Moscow is on Venus.
+<blockquote>
+**1.** Vancouver is on Mars. <br/>
+**2.** Moscow is on Venus. <br/>
+[therefore] Vancouver is on Mars and Moscow is on Venus.
+</blockquote>
 
 Although this one has false premises, and so can't be sound, it is also
 valid. It is impossible for the premises to be true if the conclusion is
@@ -543,50 +567,60 @@ appendix B; the problems that are solved in the appendix are marked with a [star
 
 [star] **Part A** Which of the following are 'sentences' in the logical sense?
 
-    1. England is smaller than China.
-    2. Greenland is south of Jerusalem.
-    3. Is New Jersey east of Wisconsin?
-    4. The atomic number of helium is 2.
-    5. The atomic number of helium is $\pi$.
-    6. I hate overcooked noodles.
-    7. Blech! Overcooked noodles!
-    8. Overcooked noodles are disgusting.
-    9. Take your time.
-    10. This is the last question.
+<blockquote>
+**1.** England is smaller than China. <br/>
+**2.** Greenland is south of Jerusalem. <br/>
+**3.** Is New Jersey east of Wisconsin? <br/>
+**4.** The atomic number of helium is 2. <br/>
+**5.** The atomic number of helium is [pi]. <br/>
+**6.** I hate overcooked noodles. <br/>
+**7.** Blech! Overcooked noodles! <br/>
+**8.** Overcooked noodles are disgusting. <br/>
+**9.** Take your time. <br/>
+**10.** This is the last question.
+</blockquote>
 
 **Part B** For each of the following: Is it a
 tautology, a contradiction, or a contingent sentence?
 
-    1. Caesar crossed the Rubicon.
-    2. Someone once crossed the Rubicon.
-    3. No one has ever crossed the Rubicon.
-    4. If Caesar crossed the Rubicon, then someone has.
-    5. Even though Caesar crossed the Rubicon, no one has ever crossed the Rubicon.
-    6. If anyone has ever crossed the Rubicon, it was Caesar.
+<blockquote>
+**1.** Caesar crossed the Rubicon. <br/>
+**2.** Someone once crossed the Rubicon. <br/>
+**3.** No one has ever crossed the Rubicon. <br/>
+**4.** If Caesar crossed the Rubicon, then someone has. <br/>
+**5.** Even though Caesar crossed the Rubicon, no one has ever crossed the Rubicon. <br/>
+**6.** If anyone has ever crossed the Rubicon, it was Caesar.
+</blockquote>
 
 [star] **Part C** Look back at the sentences G1--G4 on p. 19, and consider each of the
 following sets of sentences. Which are consistent? Which are inconsistent?
 
-    1. G2, G3, and G4
-    2. G1, G3, and G4
-    3. G1, G2, and G4
-    4. G1, G2, and G3
+<blockquote>
+**1.** G2, G3, and G4 <br/>
+**2.** G1, G3, and G4 <br/>
+**3.** G1, G2, and G4 <br/>
+**4.** G1, G2, and G3
+</blockquote>
 
 [star] **Part D** Which of the following is possible? If it is possible, give an example. If it is not possible, explain why.
 
-    1. A valid argument that has one false premise and one true premise
-    2. A valid argument that has a false conclusion
-    3. A valid argument, the conclusion of which is a contradiction
-    4. An invalid argument, the conclusion of which is a tautology
-    5. A tautology that is contingent
-    6. Two logically equivalent sentences, both of which are tautologies
-    7. Two logically equivalent sentences, one of which is a tautology and one of which is contingent
-    8. Two logically equivalent sentences that together are an inconsistent set
-    9. A consistent set of sentences that contains a contradiction
-    10. An inconsistent set of sentences that contains a tautology
+<blockquote>
+**1.** A valid argument that has one false premise and one true premise <br/>
+**2.** A valid argument that has a false conclusion <br/>
+**3.** A valid argument, the conclusion of which is a contradiction <br/>
+**4.** An invalid argument, the conclusion of which is a tautology <br/>
+**5.** A tautology that is contingent <br/>
+**6.** Two logically equivalent sentences, both of which are tautologies <br/>
+**7.** Two logically equivalent sentences, one of which is a tautology and one of which is contingent <br/>
+**8.** Two logically equivalent sentences that together are an inconsistent set <br/>
+**9.** A consistent set of sentences that contains a contradiction <br/>
+**10.** An inconsistent set of sentences that contains a tautology
+</blockquote>
 
 **Part E** Is this argument valid? Why or why not? (Hint: here and elsewhere in logic, read the definitions of our formal terms literally.)
 
-    1. PHIL 220 is a course with a final exam.
-    2. No courses ever have final exams.
-    [therefore] Everyone is going to get an A+ in PHIL 220.
+<blockquote>
+**1.** PHIL 220 is a course with a final exam. <br/>
+**2.** No courses ever have final exams. <br/>
+[therefore] Everyone is going to get an A+ in PHIL 220.
+</blockquote>
