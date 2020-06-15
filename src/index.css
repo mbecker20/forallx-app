@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, et-book, Palatino, "Palatino Linotype", Georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, et-book, Palatino, "Palatino Linotype", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
