@@ -36,8 +36,8 @@ function ChapterViewer() {
       </div>
       <animated.div className={classes.CVContainer} onScroll={onScroll} style={scrollbarSpring}>
         <CVInnerContainer selectedState={selectedState}>
-          <Chapter chapterName={'1. What is logic?'}>
-            <SubChapter chapter='chapter1' section='#what-is-logic' id='1.0'>Introduction</SubChapter>
+          <Chapter chapterName='1. What is logic?' chapterID='chapter1'>
+            <SubChapter section='#what-is-logic' id='1.0'>Introduction</SubChapter>
             <SubChapter section='#arguments' id='1.1'>1.1 Arguments</SubChapter>
             <SubChapter section='#sentences-and-propositions' id='1.2'>1.2 Sentences and propositions</SubChapter>
             <SubChapter section='#two-ways' id='1.3'>1.3 Two ways that arguments can go wrong</SubChapter>
