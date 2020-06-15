@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/forallx-app/static/css/main.ebcc1fa1.chunk.css",
-    "main.js": "/forallx-app/static/js/main.4d6d99c9.chunk.js",
-    "main.js.map": "/forallx-app/static/js/main.4d6d99c9.chunk.js.map",
+    "main.js": "/forallx-app/static/js/main.ff9519da.chunk.js",
+    "main.js.map": "/forallx-app/static/js/main.ff9519da.chunk.js.map",
     "runtime-main.js": "/forallx-app/static/js/runtime-main.9dac59e1.js",
     "runtime-main.js.map": "/forallx-app/static/js/runtime-main.9dac59e1.js.map",
     "static/js/2.54090dc8.chunk.js": "/forallx-app/static/js/2.54090dc8.chunk.js",
     "static/js/2.54090dc8.chunk.js.map": "/forallx-app/static/js/2.54090dc8.chunk.js.map",
     "index.html": "/forallx-app/index.html",
-    "precache-manifest.22eded185fea848dce9fb3ec7c54818b.js": "/forallx-app/precache-manifest.22eded185fea848dce9fb3ec7c54818b.js",
+    "precache-manifest.fb1a76b91e3121e8c6a33f37d57808b0.js": "/forallx-app/precache-manifest.fb1a76b91e3121e8c6a33f37d57808b0.js",
     "service-worker.js": "/forallx-app/service-worker.js",
     "static/css/main.ebcc1fa1.chunk.css.map": "/forallx-app/static/css/main.ebcc1fa1.chunk.css.map",
     "static/js/2.54090dc8.chunk.js.LICENSE.txt": "/forallx-app/static/js/2.54090dc8.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9dac59e1.js",
     "static/js/2.54090dc8.chunk.js",
     "static/css/main.ebcc1fa1.chunk.css",
-    "static/js/main.4d6d99c9.chunk.js"
+    "static/js/main.ff9519da.chunk.js"
   ]
 }
