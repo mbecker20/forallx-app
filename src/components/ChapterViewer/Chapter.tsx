@@ -21,7 +21,12 @@ function Chapter({ chapterName, chapterID, children, selectedState }: Props) {
   const [highlighted, setHighlighted] = useState(false)
 
   const headerSpring = useSpring({
-    color: highlighted ? colors.selectedText : colors.text
+    color: highlighted ? colors.selectedText : colors.text,
+    config: {
+      tension: 220,
+      clamp: true,
+      //easing: t => t*t
+    }
   })
 
   const childrenWithProps = Children.map(children, (child, index) => {

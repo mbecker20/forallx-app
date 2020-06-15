@@ -26,7 +26,7 @@ function SubChapter({ isOpen, children, selectedState, id, section, chapter }: P
     config: {
       tension: 220,
       clamp: true,
-      easing: t => t*t
+      //easing: t => t*t
     },
   })
 
