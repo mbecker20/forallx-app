@@ -22,7 +22,7 @@ function SubChapter({ isOpen, children, selectedState, id, section, chapter }: P
     transform: isOpen ? 'scaleY(1)' : 'scaleY(0)',
     opacity: isOpen ? 1 : 0,
     padding: isOpen ? '5px' : '0px',
-    color: (selectedState as SelectedState).selectedSC === id ? colors.selectedText : colors.text,
+    color: (selectedState as SelectedState).selectedSC === id ? colors.text : colors.text,
     config: {
       tension: 220,
       clamp: true,
