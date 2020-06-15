@@ -20,7 +20,7 @@ const useJSS = createUseStyles({
   },
 
   SideBar: {
-    backgroundColor: colors.background,
+    backgroundColor: colors.sbBackground,
     borderStyle: 'none inset none none',
     borderColor: 'black',
     height: `calc(100vh - ${sizes.topbarHeight})`,
