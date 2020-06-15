@@ -75,7 +75,7 @@ const useJSS = createUseStyles({
     width: `calc(${sizes.chapterViewerWidth} - 5px)`,
     flexDirection: 'column',
     fontSize: 'calc(20px + 2vmin)',
-    paddingTop: '3vmin',
+    paddingTop: '15px',
     paddingBottom: '15px',
     borderStyle: 'none none solid none',
   },
