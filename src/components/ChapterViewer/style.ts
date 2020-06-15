@@ -128,6 +128,7 @@ const useJSS = createUseStyles({
     '&:hover': {
       cursor: 'pointer',
     },
+    textDecoration: 'none',
   },
 })
 

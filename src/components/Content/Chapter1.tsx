@@ -46,7 +46,7 @@ function Chapter1(props: RouteComponentProps) {
 <p>Expressions like ‘Ouch!’ or ‘Boo, Yankees!’ are sometimes described as exclamatory sentences, but they are neither true nor false. We will treat ‘Ouch, I hurt my toe!’ as meaning the same thing as ‘I hurt my toe.’ The ‘ouch’ does not add anything that could be true or false.</p>
 <p>To recap: <em>sentences</em>, in the technical sense we’re interested in, are claims that can be true or false. One pretty good test you can run to see whether something is a sentence is to ask whether it makes sense to insert ‘it is true that’ or ‘it is false that’ in front of it. It’s perfectly fine to say ‘it is true that Kierkegaard liked almonds’ or ‘it is true that the U.S. invasion of Iraq was unjustified’. But it doesn’t make sense to say ‘it is true that are you sleepy yet’ or ‘it is true that sit up straight’.</p>
 <p>We will call truth or falsity the <strong>truth-value</strong> of a sentence.</p>
-<h2 id="two-ways-that-arguments-can-go-wrong"><strong>1.3 Two ways that arguments can go wrong</strong></h2>
+<h2 id="two-ways"><strong>1.3 Two ways that arguments can go wrong</strong></h2>
 <p>Consider the argument that you should take an umbrella</p>
 <blockquote>
 <strong>1.</strong> It is raining heavily. <br/> <strong>2.</strong> When it rains, everyone outside without an umbrella gets wet. <br/> [therefore] You should take an umbrella.

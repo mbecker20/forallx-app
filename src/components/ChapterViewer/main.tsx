@@ -37,15 +37,15 @@ function ChapterViewer() {
       <animated.div className={classes.CVContainer} onScroll={onScroll} style={scrollbarSpring}>
         <CVInnerContainer selectedState={selectedState}>
           <Chapter chapterName={'1. What is logic?'}>
-            <SubChapter id='1.0'>Introduction</SubChapter>
-            <SubChapter id='1.1'>1.1 Arguments</SubChapter>
-            <SubChapter id='1.2'>1.2 Sentences and propositions</SubChapter>
-            <SubChapter id='1.3'>1.3 Two ways that arguments can go wrong</SubChapter>
-            <SubChapter id='1.4'>1.4 Validity</SubChapter>
-            <SubChapter id='1.5'>1.5 Impossibility</SubChapter>
-            <SubChapter id='1.6'>1.6 Other logical notions</SubChapter>
-            <SubChapter id='1.7'>1.7 Formal languages</SubChapter>
-            <SubChapter id='1.8'>Practice Exercises</SubChapter>
+            <SubChapter chapter='chapter1' section='#what-is-logic' id='1.0'>Introduction</SubChapter>
+            <SubChapter section='#arguments' id='1.1'>1.1 Arguments</SubChapter>
+            <SubChapter section='#sentences-and-propositions' id='1.2'>1.2 Sentences and propositions</SubChapter>
+            <SubChapter section='#two-ways' id='1.3'>1.3 Two ways that arguments can go wrong</SubChapter>
+            <SubChapter section='#validity' id='1.4'>1.4 Validity</SubChapter>
+            <SubChapter section='#impossibility' id='1.5'>1.5 Impossibility</SubChapter>
+            <SubChapter section='#other-logical-notions' id='1.6'>1.6 Other logical notions</SubChapter>
+            <SubChapter section='#formal-languages' id='1.7'>1.7 Formal languages</SubChapter>
+            <SubChapter section='#practice-exercises' id='1.8'>Practice Exercises</SubChapter>
           </Chapter>
           <Chapter chapterName={'2. Sentenial logic'}>
             <SubChapter id='2.0'>SubChapter A</SubChapter>

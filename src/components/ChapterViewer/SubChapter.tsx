@@ -3,17 +3,18 @@ import { animated, useSpring } from 'react-spring'
 import useJSS from './style'
 import { colors } from '../../theme'
 import { SelectedState } from './types'
-//import { navigate } from '@reach/router'
+import { navigate } from '@reach/router'
 
 interface Props {
   isOpen?: boolean,
   children: React.ReactNode,
   selectedState?: SelectedState
   id: string
-  path?: string
+  section?: string
+  chapter?: string
 }
 
-function SubChapter({ isOpen, children, selectedState, id, path }: Props) {
+function SubChapter({ isOpen, children, selectedState, id, section, chapter }: Props) {
   const numChars = (children as String).length
   const classes = useJSS(colors)
   const springStyle = useSpring({
@@ -29,12 +30,13 @@ function SubChapter({ isOpen, children, selectedState, id, path }: Props) {
     },
   })
   function onClick() {
+    navigate(chapter as string);
     (selectedState as SelectedState).setSelectedSC(id)
   }
   return (
-    <animated.div className={classes.SubChapter} style={springStyle} onClick={onClick}>
+    <animated.a href={section} className={classes.SubChapter} style={springStyle} onClick={onClick}>
       {children}
-    </animated.div>
+    </animated.a>
   );
 }
 
