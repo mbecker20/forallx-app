@@ -5,6 +5,7 @@ const useJSS = createUseStyles({
   Content: {
     backgroundColor: colors.background,
     width: '90%',
+    maxWidth: '45em',
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
