@@ -22,19 +22,35 @@ function SubChapter({ isOpen, children, selectedState, id, section, chapter }: P
     transform: isOpen ? 'scaleY(1)' : 'scaleY(0)',
     opacity: isOpen ? 1 : 0,
     padding: isOpen ? '5px' : '0px',
-    color: (selectedState as SelectedState).selectedSC === id ? colors.text : colors.text,
+    color: (selectedState as SelectedState).selectedSC === id ? colors.selectedText : colors.text,
     config: {
       tension: 220,
       clamp: true,
       easing: t => t*t
     },
   })
+
   function onClick() {
     navigate(chapter as string);
+  }
+
+  function onPointerEnter() {
     (selectedState as SelectedState).setSelectedSC(id)
   }
+
+  function onPointerLeave() {
+    (selectedState as SelectedState).setSelectedSC('')
+  }
+
   return (
-    <animated.a href={section} className={classes.SubChapter} style={springStyle} onClick={onClick}>
+    <animated.a 
+      href={section} 
+      className={classes.SubChapter} 
+      style={springStyle} 
+      onClick={onClick}
+      onPointerEnter={onPointerEnter}
+      onPointerLeave={onPointerLeave}
+    >
       {children}
     </animated.a>
   );

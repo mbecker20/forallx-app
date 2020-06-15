@@ -1,6 +1,7 @@
-import React, { useState, Children, cloneElement, ReactElement } from 'react'
+import React, { useState, Children, cloneElement } from 'react'
 import useJSS from './style'
 import { colors } from '../../theme'
+import { animated, useSpring } from 'react-spring'
 
 interface Props {
   children: React.ReactNode
@@ -10,12 +11,18 @@ interface Props {
 }
 
 function Chapter({ chapterName, chapterID, children, selectedState }: Props) {
+  const classes = useJSS()
   const [open, setOpen] = useState(false)
-  const classes = useJSS(colors)
 
   function toggleOpen() {
     setOpen(!open)
   }
+
+  const [highlighted, setHighlighted] = useState(false)
+
+  const headerSpring = useSpring({
+    color: highlighted ? colors.selectedText : colors.text
+  })
 
   const childrenWithProps = Children.map(children, (child, index) => {
     return cloneElement(child as React.ReactElement, { 
@@ -28,7 +35,13 @@ function Chapter({ chapterName, chapterID, children, selectedState }: Props) {
 
   return (
     <div className={classes.Chapter}>
-      <div className={classes.ChapterName} onClick={toggleOpen}>{chapterName}</div>
+      <animated.div 
+        className={classes.ChapterName} 
+        onClick={toggleOpen}
+        style={headerSpring}
+        onPointerEnter={() => {setHighlighted(true)}}
+        onPointerLeave={() => {setHighlighted(false)}}
+      >{chapterName}</animated.div>
       <div className={classes.SubChapterBounder}>
         {childrenWithProps}
       </div>

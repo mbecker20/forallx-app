@@ -9,12 +9,6 @@ let timeoutID = 0
 
 function ChapterViewer() {
   const classes = useJSS()
-  /*
-  const [state, setState] = useState(false)
-  function reRender() { // I dont think this is the most elegant way to trigger re renders but works for now
-    setState(!state)
-  }
-  */
   const [selectedSC, setSelectedSC] = useState('') // the highlighted sub chapter
   const selectedState = {
     selectedSC: selectedSC,
