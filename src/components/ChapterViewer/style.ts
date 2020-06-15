@@ -3,7 +3,6 @@ import { colors, sizes } from '../../theme'
 
 const useJSS = createUseStyles({
   Bounder: {
-    backgroundColor: colors.background,
     color: colors.text,
     display: 'flex',
     alignItems: 'center',
