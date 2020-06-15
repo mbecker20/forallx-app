@@ -6,9 +6,10 @@ interface Props {
   children: React.ReactNode
   chapterName: string
   selectedState?: any
+  chapterID?: string
 }
 
-function Chapter({ chapterName, children, selectedState }: Props) {
+function Chapter({ chapterName, chapterID, children, selectedState }: Props) {
   const [open, setOpen] = useState(false)
   const classes = useJSS(colors)
 
@@ -17,7 +18,12 @@ function Chapter({ chapterName, children, selectedState }: Props) {
   }
 
   const childrenWithProps = Children.map(children, (child, index) => {
-    return cloneElement(child as React.ReactElement, { isOpen: open, key: index, selectedState: selectedState })
+    return cloneElement(child as React.ReactElement, { 
+      isOpen: open, 
+      key: index, 
+      selectedState: selectedState,
+      chapter: chapterID
+    })
   })
 
   return (
